@@ -1,2 +1,426 @@
 // Operations On String __ 22 Programs.
 
+// Check Whether A Character Is Vowel or Consonant.
+// import java.util.Scanner;
+// public class top {
+
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.print("Enter A Character To Check Whether It Is Vowel Or Consonant: ");
+//         char ch = sc.next().charAt(0); // Reading A Character From User.
+//         if(ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U' || ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u'){
+//             System.out.print(ch + " Is A Vowel.");
+//         }
+//         else{
+//             System.out.print(ch + " Is A Consonant.");
+//         }
+//     }
+// }
+
+
+// // Check Whether A Character Is Alphabet or Not.
+// import java.util.*;
+// public class top {
+
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.print("Enter A Character To Check Whether It Is Alphabet Or Not: ");
+//         char ch = sc.next().charAt(0);
+//         if((ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z')){
+//             System.out.print(ch + " Is A Alphabet.");
+//         }
+//         else{
+//             System.out.print(ch + " Is Not A Alphabet.");
+//         }
+//     }
+// }
+
+
+// Finding The ASCII Value Of A Character.
+// import java.util.*;
+// public class top {
+
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.print("Enter A Character To Find The ASCII Value Of It: ");
+//         char ch = sc.next().charAt(0);
+//         int i = ch;
+//         System.out.print("The ASCII Value Of " + ch + " Is: " + i);
+//     }
+// }
+
+
+// Length Of The String Without Using strlen() Function.
+// import java.util.*;
+// public class top {
+
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.print("Enter The String To Check The Length Of It: ");
+//         String str = sc.nextLine();
+//         int length = 0;
+//         for(char ch : str.toCharArray()){
+//             length++;
+//         }
+//         System.out.print(length + " Is Length Of Given String.");
+//     }
+// }
+
+
+// Toggle Each Character In A String.
+// import java.util.*;
+// public class top {
+
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.print("Enter The String To Toggle It: ");
+//         String str = sc.nextLine();
+//         String newstr = "";
+//         for(int i = 0;i<str.length();i++){
+//             if(Character.isUpperCase(str.charAt(i))){
+//                 newstr += Character.toLowerCase(str.charAt(i));
+//             }
+//             else{
+//                 newstr += Character.toUpperCase(str.charAt(i));
+//             }
+//         }
+//         System.out.print("Toggle String Is: " + newstr);
+//     }
+// }
+
+
+// Count Number Of Vowels In A String.
+// import java.util.*;
+// public class top {
+
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.print("Enter The String To Check The Length Of It: ");
+//         String str = sc.nextLine();
+//         int vowelcount = 0;
+//         for(int i = 0;i<str.length();i++){
+//             if(str.charAt(i)=='a' || str.charAt(i)=='e' || str.charAt(i)=='i' || str.charAt(i)=='o' || str.charAt(i)=='u' || str.charAt(i)=='A' || str.charAt(i)=='E' || str.charAt(i)=='I' || str.charAt(i)=='O' || str.charAt(i)=='U'){
+//                 vowelcount++;
+//             }
+//         }
+//         System.out.print(vowelcount + " Are Present In The Given String.");
+//     }
+// }
+
+
+// Remove Vowels From The String.
+// import java.util.*;
+// public class top {
+
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.print("Enter The String To Remove The Vowels From It: ");
+//         String str = sc.nextLine();
+//         String newstr = "";
+//         newstr = str.replaceAll("[aeiouAEIOU]","");
+//         System.out.print("After Removing The Vowels: " + newstr);
+//         }
+//     }
+
+
+// Check If String Is Palindrome Or Not.
+// import java.util.*;
+// public class top {
+
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.print("Enter The String To Check Whether It Is Palindrome Or Not: ");
+//         String str = sc.nextLine();
+//         String revstr = "";
+//         for(int i = str.length() - 1;i>=0;i--){
+//             revstr += str.charAt(i);
+//         }
+//         if(str.equals(revstr)){
+//             System.out.print("String Is Palindrome.");
+//         }
+//         else{
+//             System.out.print("String Is Not A Palindrome.");
+//         }
+//     }
+// }
+
+
+// Print The String In Reverse Order.
+// import java.util.*;
+// public class top {
+
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.print("Enter The String To Reverse It: ");
+//         String str = sc.nextLine();
+//         String revstr = "";
+//         for(int i = str.length() - 1;i>=0;i--){
+//             revstr += str.charAt(i);
+//         }
+//         System.out.print("The Reversed String Is: " + revstr);
+//     }
+// }
+
+
+// Remove All Characters From String Except Alphabets.
+// import java.util.*;
+// public class top {
+
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.print("Enter The String: ");
+//         String str = sc.nextLine();
+//         str = str.replaceAll("[^a-zA-Z]", "");
+//         System.out.print("The String After Removing Characters Is: " + str);
+//     }
+// }
+
+
+// Remove Spaces From A String.
+// import java.util.*;
+// public class top {
+
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.print("Enter The String: ");
+//         String str = sc.nextLine();
+//         str = str.replaceAll("[ ]", "");
+//         System.out.print("The String After Removing Spaces Is: " + str);
+//     }
+// }
+
+
+// Remove Brackets From An Algebraic Expression.
+// import java.util.*;
+// public class top {
+
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.print("Enter The Algebraic Expression: ");
+//         String str = sc.nextLine();
+//         str = str.replaceAll("[(){}]", "");
+//         System.out.print("The Algebraic Expression After Removing Brackets Is: " + str);
+//     }
+// }
+
+
+// Count The Sum Of Numbers In A String.
+// import java.util.*;
+// public class top {
+
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.print("Enter The String Which Includes Numbers In It: ");
+//         String str = sc.nextLine();
+//         int sum = 0;
+//         for(int i = 0;i<str.length();i++){
+//             if(str.charAt(i)>='0' && str.charAt(i)<='9'){
+//                 sum += (str.charAt(i) - '0');
+//             }
+//         }
+//         System.out.print("The Sum Of All Digits That Are Present In The Above String: " + sum);
+//     }
+// }
+
+
+// Capitalize The First And Last Character Of Each Word Of A String.
+// import java.util.Scanner;
+// public class top {
+//    public static void main(String[] args) {
+//      Scanner sc =new Scanner(System.in);
+//      System.out.print("Enter The String: "); 
+//      String s = sc.nextLine();
+//      String newstr = "";
+
+//      String[] str = s.split("\\s"); // splitting sentence into word converted to String array
+
+//     for (String string : str) {     
+//       int length = string.length();
+//       String firstchar = string.substring(0, 1);
+//       String restchar = string.substring(1, length - 1);
+//       String lastchar = Character.toString(string.charAt(length - 1));
+//       newstr = newstr+firstchar.toUpperCase()+restchar+" ";
+//     } 
+//     System.out.println(newstr); 
+//   }
+// }
+
+
+// Caculate The Frequency Of Characters In A String.
+// import java.util.*;
+// public class top {
+
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.print("Enter The String: ");
+//         String str = sc.nextLine();
+//         int[] freq = new int[str.length()];
+//         int i,j;
+
+//         char string[] = str.toCharArray();
+//         for(i = 0;i<str.length();i++){
+//             freq[i] = 1;
+//             for(j = i + 1;j<str.length();j++){
+//                 if(string[i] == string[j]){
+//                     freq[i]++;
+//                     string[j] = '0';
+//                 }
+//             }
+//         }
+//         System.out.println("Characters And Thier Corresponding Frequencies: ");
+//         for(i = 0;i<freq.length;i++){
+//             if(string[i] != ' ' && string[i] != '0'){
+//                 System.out.println(string[i] + " - " + freq[i]);
+//             }
+//         }
+//     }
+// }
+
+
+// Find First Non Repeating Character In A String.
+// import java.util.*;
+// public class top {
+
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.print("Enter The String: ");
+//         String str = sc.nextLine();
+//         boolean flag = true;
+//         for(char i : str.toCharArray()){
+//             if(str.indexOf(i) == str.lastIndexOf(i)){
+//                 System.out.print("First Non - Repeating Character Is: " + i);
+//                 flag = false;
+//                 break;
+//             }
+//         }
+//         if(flag){
+//             System.out.print("There Is No Non Repeating Character In The Input String.");
+//         }
+//     }
+// }
+
+
+// Check If Two Strings Are Anagram Or Not.
+// import java.util.*;
+// public class top {
+
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.print("Enter The 1St String: ");
+//         String str1 = sc.nextLine();
+//         System.out.print("Enter The 2Nd String: ");
+//         String str2 = sc.nextLine();
+//         char arr1[] = str1.toCharArray();
+//         char arr2[] = str2.toCharArray();
+//         Arrays.sort(arr1);
+//         Arrays.sort(arr2);
+//         if(Arrays.equals(arr1, arr2)){
+//             System.out.print("Given Strings Are Anagram.");
+//         }
+//         else{
+//             System.out.print("Given Strings Are Not Anagram.");
+//         }
+//     }
+// }
+
+
+// Replace Substring In A String.
+// import java.util.*;
+// public class top {
+
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.println("Enter The String: ");
+//         String str = sc.nextLine();
+//         System.out.println("Enter The Substring Of Given String: ");
+//         String substr = sc.nextLine();
+//         System.out.println("Enter The String You Want To Replace: ");
+//         String repstr = sc.nextLine();
+//         String modifiedstr = str.replace(substr,repstr);
+//         System.out.println("Original String: " + str);
+//         System.out.println("Modified String: " + modifiedstr);
+//     }
+// }
+
+
+// Replacing A Particular Word With Another Word From A Given String.
+// import java.util.*;
+// public class top {
+
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.println("Enter The String: ");
+//         String str = sc.nextLine();
+//         System.out.println("Enter The Word To Replace: ");
+//         String wordToReplace = sc.nextLine();
+//         System.out.println("Enter The Next Word: ");
+//         String newWord = sc.nextLine();
+//         String resultstr = "";
+//         String[] words = str.split(" ");
+//         for(int i = 0;i<words.length;i++){
+//             if(words[i].equals(wordToReplace)){
+//                 resultstr += newWord + " ";
+//             }
+//             else{
+//                 resultstr += words[i]  + " ";
+//             }
+//         }
+//         resultstr = resultstr.trim();
+//         System.out.print("Updated String: " + resultstr);
+//     }
+// }
+
+
+// Count Common Sub - Sequence In Two Strings.
+// import java.util.*;
+
+// public class top {
+
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.print("Enter The First String: ");
+//         String str1 = sc.nextLine();
+
+//         System.out.print("Enter The Second String: ");
+//         String str2 = sc.nextLine();
+
+//         int result = countCommonSubsequences(str1, str2);
+
+//         System.out.print("The Number Of Common Subsequences Is: " + result);
+//         sc.close();
+//     }
+
+//     public static int countCommonSubsequences(String A, String B) {
+//         int n = A.length();
+//         int m = B.length();
+//         int[][] dp = new int[n + 1][m + 1];
+
+//         // Initialize base cases
+//         for (int i = 0; i <= n; i++) {
+//             dp[i][0] = 1; // Empty string B
+//         }
+//         for (int j = 0; j <= m; j++) {
+//             dp[0][j] = 1; // Empty string A
+//         }
+
+//         // Fill DP table
+//         for (int i = 1; i <= n; i++) {
+//             for (int j = 1; j <= m; j++) {
+//                 if (A.charAt(i - 1) == B.charAt(j - 1)) {
+//                     dp[i][j] = dp[i - 1][j - 1] + dp[i - 1][j] + dp[i][j - 1] - dp[i - 1][j - 1];
+//                 } else {
+//                     dp[i][j] = dp[i - 1][j] + dp[i][j - 1] - dp[i - 1][j - 1];
+//                 }
+//             }
+//         }
+
+//         // Subtract 1 to exclude the empty subsequence
+//         return dp[n][m] - 1;
+//     }
+// }
+
+
+// Check If Two Strings Match Where One String Contains Wildcard Characters.
+
+
+// Print All Permutations Of A Given String In Lexicographically Sorted Order.
