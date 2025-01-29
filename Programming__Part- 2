@@ -1,1 +1,1221 @@
 // Important Codes Related To Arrays __ 32 Programs.
+
+// ------->>>>>>> Syntax Of Reading An Array.
+// import java.util.*;
+// public class top {
+
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.print("Enter The Size Of An Array: ");
+//         int size = sc.nextInt();
+//         int arr[] = new int[size];
+//         System.out.print("Enter The Elements In An Array: ");
+//         for(int i = 0;i<size;i++){
+//             arr[i] = sc.nextInt();
+//             System.out.print(arr[i] + " ");
+//         }
+//     }
+// }
+
+
+// Find Largest Element In An Array.
+// import java.util.*;
+// public class top {
+
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.print("Enter The Size Of An Array: ");
+//         int size = sc.nextInt();
+//         int arr[] = new int[size];
+//         System.out.print("Enter The Elements In An Array: ");
+//         for(int i = 0;i<size;i++){
+//             arr[i] = sc.nextInt();
+//         }
+//         int max = arr[0];
+//         for(int i = 0;i<size;i++){
+//             if(arr[i] > arr[0]){
+//                 max = arr[i];
+//             }
+//         }
+//         System.out.print("The Largest Element Is: " + max);
+//     }
+// }
+
+
+// // Find Smallest Element In An Array.
+// import java.util.*;
+// public class top {
+
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.print("Enter The Size Of Array: ");
+//         int size = sc.nextInt();
+//         int arr[] = new int[size];
+//         System.out.print("Enter The Elements In An Array: ");
+//         for(int i = 0;i<size;i++){
+//             arr[i] = sc.nextInt();
+//         }
+//         int min = arr[0];
+//         for(int i = 0;i<size;i++){
+//             if(arr[i] < min){
+//                 min = arr[i];
+//             }
+//         }
+//         System.out.print("The Smallest Element Is: " + min);
+//     }
+// }
+
+
+// Find The Largest And Smallest Element In An Array.
+// import java.util.*;
+// public class top {
+
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.print("Enter The Size Of Array: ");
+//         int size = sc.nextInt();
+//         int arr[] = new int[size];
+//         System.out.print("Enter The Elements In An Array: ");
+//         for(int i = 0;i<size;i++){
+//             arr[i] = sc.nextInt();
+//         }
+//         int min = arr[0];
+//         int max = arr[0];
+//         for(int i = 0;i<size;i++){
+//             if(arr[i] < min){
+//                 min = arr[i];
+//             }
+//         }
+//         for(int i = 0;i<size;i++){
+//             if(arr[i] > max){
+//                 max = arr[i];
+//             }
+//         }
+//         System.out.println("The Smallest Element Is: " + min);
+//         System.out.println("The Largest Element Is: " + max);
+//     }
+// }
+
+
+// Find The Second Smallest Element And Second Largest In An Array.
+// import java.util.Scanner;
+// public class top {
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+
+//         // Input size of array
+//         System.out.print("Enter size of array: ");
+//         int n = sc.nextInt();
+//         int arr[] = new int[n];
+
+//         // Input elements in array
+//         System.out.println("Enter elements of array: ");
+//         for (int i = 0; i < n; i++) {
+//             arr[i] = sc.nextInt();
+//         }
+
+//         // Initialize smallest and second smallest
+//         int smallest = Integer.MAX_VALUE, secondSmallest = Integer.MAX_VALUE;
+//         // Initialize largest and second largest
+//         int largest = Integer.MIN_VALUE, secondLargest = Integer.MIN_VALUE;
+
+//         // Find smallest and largest elements
+//         for (int i = 0; i < n; i++) {
+//             if (arr[i] < smallest) {
+//                 secondSmallest = smallest;
+//                 smallest = arr[i];
+//             } else if (arr[i] > smallest && arr[i] < secondSmallest) {
+//                 secondSmallest = arr[i];
+//             }
+
+//             if (arr[i] > largest) {
+//                 secondLargest = largest;
+//                 largest = arr[i];
+//             } else if (arr[i] < largest && arr[i] > secondLargest) {
+//                 secondLargest = arr[i];
+//             }
+//         }
+
+//         // Print results
+//         if (secondSmallest == Integer.MAX_VALUE) {
+//             System.out.println("No second smallest element found.");
+//         } else {
+//             System.out.println("Second Smallest Element: " + secondSmallest);
+//         }
+
+//         if (secondLargest == Integer.MIN_VALUE) {
+//             System.out.println("No second largest element found.");
+//         } else {
+//             System.out.println("Second Largest Element: " + secondLargest);
+//         }
+
+//         sc.close();
+//     }
+// }
+
+
+// Calculate The Sum Of Elements In An Array.
+// import java.util.*;
+// public class top {
+
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.print("Enter The Size Of Array: ");
+//         int size = sc.nextInt();
+//         int arr[] = new int[size];
+//         System.out.print("Enter The Elements In An Array: ");
+//         for(int i = 0;i<size;i++){
+//             arr[i] = sc.nextInt();
+//         }
+//         int sum = 0;
+//         for(int i = 0;i<size;i++){
+//             sum = sum + arr[i];
+//         }
+//         System.out.print("Sum Of Elements In An Array: " + sum);
+//     }
+// }
+
+
+// Reverse An Array.
+// import java.util.*;
+// public class top {
+
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.print("Enter The Size Of Array: ");
+//         int size = sc.nextInt();
+//         int arr[] = new int[size];
+//         System.out.print("Enter The Elements In An Array: ");
+//         for(int i = 0;i<size;i++){
+//             arr[i] = sc.nextInt();
+//         }
+//         System.out.print("Reverse Of An Array: ");
+//         for(int i=size - 1;i>=0;i--){
+//             System.out.print(arr[i] + " ");
+//         }
+//     }
+// }
+
+
+// Sort First Half In Ascending Order And Second Half In Descending.
+// import java.util.*;
+// public class top {
+
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.print("Enter The Size Of Array: ");
+//         int size = sc.nextInt();
+//         int arr[] = new int[size];
+//         System.out.print("Enter The Elements In An Array: ");
+//         for(int i = 0;i<size;i++){
+//             arr[i] = sc.nextInt();
+//         }
+//         Arrays.sort(arr);
+//         for(int i=0;i<=size/2;i++){
+//             System.out.print(arr[i] + " ");
+//         }
+//         for(int i=size-1;i>size/2;i--){
+//             System.out.print(arr[i] + " ");
+//         }
+//     }
+// }
+
+
+// Sort The Elements Of An Array.
+// import java.util.*;
+// public class top {
+
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.print("Enter The Size Of Array: ");
+//         int size = sc.nextInt();
+//         int arr[] = new int[size];
+//         System.out.print("Enter The Elements In An Array: ");
+//         for(int i = 0;i<size;i++){
+//             arr[i] = sc.nextInt();
+//         }
+//         Arrays.sort(arr);
+//         for(int i = 0;i<size;i++){
+//             System.out.print(arr[i] + " ");
+
+//         }
+//     }
+// }
+
+
+// Finding The Frequency Of Elements In An Array.
+// import java.util.*;
+// public class top {
+
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.print("Enter The Size Of Array: ");
+//         int size = sc.nextInt();
+//         int arr[] = new int[size];
+//         System.out.print("Enter The Elements In An Array: ");
+//         for(int i = 0;i<size;i++){
+//             arr[i] = sc.nextInt();
+//         }
+//         Arrays.sort(arr);
+//         for(int i = 0;i<size;i++){
+//             int count = 1;
+//             while(i < size - 1 && arr[i] == arr[i + 1]){
+//                 i++;
+//                 count++;
+//             }
+//             System.out.println(arr[i] + ": " + count);
+//             count++;
+//         }
+//     }
+// }
+
+
+// Sorting Element In Array By Frequency.
+// import java.util.Scanner;
+// public class top {
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+
+//         // Input size of array
+//         System.out.print("Enter size of array: ");
+//         int n = sc.nextInt();
+//         int arr[] = new int[n];
+
+//         // Input elements in array
+//         System.out.println("Enter elements of array: ");
+//         for (int i = 0; i < n; i++) {
+//             arr[i] = sc.nextInt();
+//         }
+
+//         // Create frequency array
+//         int freq[] = new int[n];
+//         int visited = -1;
+
+//         for (int i = 0; i < n; i++) {
+//             int count = 1;
+//             for (int j = i + 1; j < n; j++) {
+//                 if (arr[i] == arr[j]) {
+//                     count++;
+//                     freq[j] = visited; // Mark as visited
+//                 }
+//             }
+//             if (freq[i] != visited) {
+//                 freq[i] = count;
+//             }
+//         }
+
+//         // Sort array based on frequency
+//         for (int i = 0; i < n - 1; i++) {
+//             for (int j = i + 1; j < n; j++) {
+//                 if ((freq[i] < freq[j]) || (freq[i] == freq[j] && arr[i] > arr[j])) {
+//                     // Swap frequencies
+//                     int tempFreq = freq[i];
+//                     freq[i] = freq[j];
+//                     freq[j] = tempFreq;
+
+//                     // Swap elements
+//                     int tempVal = arr[i];
+//                     arr[i] = arr[j];
+//                     arr[j] = tempVal;
+//                 }
+//             }
+//         }
+
+//         // Print sorted array
+//         System.out.println("Array sorted by frequency:");
+//         for (int i = 0; i < n; i++) {
+//             if (freq[i] != visited) {
+//                 for (int j = 0; j < freq[i]; j++) {
+//                     System.out.print(arr[i] + " ");
+//                 }
+//             }
+//         }
+
+//         sc.close();
+//     }
+// }
+
+
+// Finding The Longest Palindrome In An Array.
+// import java.util.*;
+// public class top {
+
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.print("Enter The Size Of Array: ");
+//         int size = sc.nextInt();
+//         int arr[] = new int[size];
+//         System.out.print("Enter The Elements In An Array: ");
+//         for(int i = 0;i<size;i++){
+//             arr[i] = sc.nextInt();
+//         }
+//         Arrays.sort(arr);
+//         int longestPalindrome = -1;
+//         for(int i = 0;i<size;i++){
+//             int num = arr[i];
+//             int original = num;
+//             int reversed = 0;
+
+//             while(num>0){
+//                 int ldigit = num % 10;
+//                 reversed = reversed * 10 + ldigit;
+//                 num = num / 10;
+//             }
+//             if(original == reversed && original > longestPalindrome){
+//                 longestPalindrome = original;
+//             }
+//         }
+//         if(longestPalindrome!=-1){
+//             System.out.print("The Longest Palindrome In The Array Is: " + longestPalindrome);
+//         }
+//         else{
+//             System.out.print("No Largest Palindrome Found In The Array.");
+//         }
+//     }
+// }
+
+
+// Counting The Distinct Elements In An Array.
+// import java.util.*;
+// public class top {
+
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.print("Enter The Size Of Array: ");
+//         int size = sc.nextInt();
+//         int arr[] = new int[size];
+//         System.out.print("Enter The Elements In An Array: ");
+//         for(int i = 0;i<size;i++){
+//             arr[i] = sc.nextInt();
+//         }
+//         Arrays.sort(arr);
+//         boolean visited[] = new boolean[size];
+//         Arrays.fill(visited, false);
+//         int count_dis  = 0;
+//         for(int i = 0;i<size;i++){
+//             if(visited[i] == true)
+//                 continue;
+//             for(int j = i + 1;j<size;j++){
+//                 if(arr[i] == arr[j]){
+//                     visited[j] = true;
+//                 }
+//             }
+//             count_dis += 1;
+//         }
+//         System.out.print("The Distinct Elements In An Array Are: " + count_dis);
+//     }
+// }
+
+
+// Find Non - Repeating Elements In An Array.
+// import java.util.*;
+// public class top {
+
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.print("Enter The Size Of Array: ");
+//         int size = sc.nextInt();
+//         int arr[] = new int[size];
+//         System.out.print("Enter The Elements In An Array: ");
+//         for(int i = 0;i<size;i++){
+//             arr[i] = sc.nextInt();
+//         }
+//         Arrays.sort(arr);
+//         boolean visited[] = new boolean[size];
+//         Arrays.fill(visited, false);
+//         for(int i = 0;i<size;i++){
+//             if(visited[i] == true)
+//                 continue;
+//                 int count = 1;
+//             for(int j = i + 1;j<size;j++){
+//                 if(arr[i] == arr[j]){
+//                     visited[j] = true;
+//                     count++;
+//                 }
+//             }
+//             if(count == 1){
+//                 System.out.print("The Non - Repeating Elements Is :" + arr[i]);
+//             }
+//         }
+//     }
+// }
+
+
+// Removing Duplicates Elements From An Array.
+// import java.util.*;
+// public class top {
+
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.print("Enter The Size Of Array: ");
+//         int size = sc.nextInt();
+//         int arr[] = new int[size];
+//         System.out.print("Enter The Elements In An Array: ");
+//         for(int i = 0;i<size;i++){
+//             arr[i] = sc.nextInt();
+//         }
+//         Arrays.sort(arr);
+//         Set<Integer>hash_Set = new HashSet<>();
+//         for(int i = 0;i<size;i++){
+//             hash_Set.add(arr[i]);
+//         }
+//         System.out.print(hash_Set);         
+//     }
+// }
+
+
+// Finding The Minimum Scalar Product Of Two Vectors.
+// import java.util.*;
+// public class top {
+
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.print("Enter The Size Of The Array: ");
+//         int size = sc.nextInt();
+//         int arr1[] = new int[size];
+//         int arr2[] = new int[size];
+//         System.out.println("Enter The Elements In An Array_1: ");
+//         System.out.println("Elements In Array_1.");
+//         for(int i = 0;i<size;i++){
+//             arr1[i] = sc.nextInt();
+//             System.out.println(arr1[i] + " ");
+//         }
+//         System.out.println("Enter The Elements In An Array_2: ");
+//         System.out.println("Elements In Array_2.");
+//         for(int i = 0;i<size;i++){
+//             arr2[i] = sc.nextInt();
+//             System.out.println(arr2[i] + " ");
+//         }
+//         Arrays.sort(arr1);
+//         Arrays.sort(arr2);
+
+//         for(int i = 0;i<size/2;i++){
+//             int temp = arr2[i];
+//             arr2[i] = arr2[size - i - 1];
+//             arr2[size - i - 1] = temp;
+//         }
+
+//         int scalarproduct = 0;
+//         for(int i=0;i<size;i++){
+//             scalarproduct = scalarproduct + arr1[i] * arr2[i];
+//         }
+//         System.out.print("The Minimum Scalar Product Of Two Vectors Are: " + scalarproduct);
+//     }
+// }
+
+
+// Finding Maximum Scalar Product Of Two Vectors.
+// import java.util.*;
+// public class top {
+
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.print("Enter The Size Of The Array: ");
+//         int size = sc.nextInt();
+//         int arr1[] = new int[size];
+//         int arr2[] = new int[size];
+//         System.out.println("Enter The Elements In An Array_1: ");
+//         System.out.println("Elements In Array_1.");
+//         for(int i = 0;i<size;i++){
+//             arr1[i] = sc.nextInt();
+//             System.out.println(arr1[i] + " ");
+//         }
+//         System.out.println("Enter The Elements In An Array_2: ");
+//         System.out.println("Elements In Array_2.");
+//         for(int i = 0;i<size;i++){
+//             arr2[i] = sc.nextInt();
+//             System.out.println(arr2[i] + " ");
+//         }
+//         Arrays.sort(arr1);
+//         Arrays.sort(arr2);
+
+//         int scalarproduct = 0;
+//         for(int i=0;i<size;i++){
+//             scalarproduct = scalarproduct + arr1[i] * arr2[i];
+//         }
+//         System.out.print("The Maximum Scalar Product Of Two Vectors Are: " + scalarproduct);
+//     }
+// }
+
+
+// Count Numbers Of Even And Odd Elements In An Array.
+// import java.util.Scanner;
+// public class top {
+
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.print("Enter The Size Of The Array: ");
+//         int size = sc.nextInt();
+//         int arr[] = new int[size];
+//         System.out.print("Enter The Elements In The Array: ");
+//         for(int i = 0;i<size;i++){
+//             arr[i] = sc.nextInt();
+//         }
+//         int evencount = 0;
+//         int oddcount = 0;
+//         for(int i = 0;i<size;i++){
+//             if(arr[i] % 2 == 0){
+//                 evencount = evencount + 1;
+//             }
+//             else{
+//                 oddcount = oddcount + 1;
+//             }
+//         }
+//         System.out.println(evencount + " Even Number Of Elements Are Present In The Array.");
+//         System.out.println(oddcount + " Odd Number Of Elements Are Present In The Array.");
+//     }
+// }
+
+
+// Find All Symmetric Pairs In An Array.
+// import java.util.*;
+// public class top {
+
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.print("Enter The Number Of Pairs: ");
+//         int n = sc.nextInt();
+
+//         int arr[][] = new int[n][2];
+//         System.out.print("Enter The Pairs: ");
+//         for(int i = 0;i<n;i++){
+//             System.out.print("Pair " + (i + 1) + " (Two Integers): ");
+//             arr[i][0] = sc.nextInt();
+//             arr[i][1] = sc.nextInt();
+//         }
+//         System.out.println("Symmetric Pairs Are: ");
+//         for(int i = 0;i<n;i++){
+//             for(int j = i + 1;j<n;j++){
+//                 if(arr[i][0] == arr[j][1] && arr[i][1] == arr[j][0]){
+//                     System.out.println("(" + arr[i][0] + ", " + arr[i][1] + ")");
+//                 }
+//             }
+//         }
+//         sc.close();
+//     }
+// }
+
+
+// Find Maximum Product Sub-Array In A Given Array.
+// import java.util.*;
+// public class top {
+
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.print("Enter Size Of The Array: ");
+//         int size = sc.nextInt();
+//         int arr[] = new int[size];
+//         for(int i = 0;i<size;i++){
+//             arr[i] = sc.nextInt();
+//         }
+//         int result = arr[0];
+//         for(int i = 0;i<size;i++){
+//             int mul = arr[i];
+//             for(int j = i + 1;j<size;j++){
+//                 result = Math.max(result,mul);
+//                 mul *= arr[j];
+//             }
+//             result = Math.max(result,mul);
+//         }
+//         System.out.println("Maximum Sub Array Product Is: " + result);
+//     }
+// }
+
+
+//  Finding Arrays Are Disjoint Are Not.
+// import java.util.*;
+// public class top {
+
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.print("Enter the size of Array_1: ");
+//         int size1 = sc.nextInt();
+//         int[] arr1 = new int[size1];
+
+//         System.out.print("Enter the size of Array_2: ");
+//         int size2 = sc.nextInt();
+//         int[] arr2 = new int[size2];
+//         System.out.println("Enter the elements of Array_1: ");
+//         for (int i = 0; i < size1; i++) {
+//             arr1[i] = sc.nextInt();
+//         }
+
+//         System.out.println("Enter the elements of Array_2: ");
+//         for (int i = 0; i < size2; i++) {
+//             arr2[i] = sc.nextInt();
+//         }
+
+//         boolean isDisjoint = true;
+
+//         for (int i = 0; i < size1; i++) {
+//             for (int j = 0; j < size2; j++) {
+//                 if (arr1[i] == arr2[j]) {
+//                     isDisjoint = false; 
+//                     break; 
+//                 }
+//             }
+//             if (!isDisjoint) {
+//                 break; 
+//             }
+//         }
+
+//         if (isDisjoint) {
+//             System.out.println("The Two Arrays Are Disjoint.");
+//         } else {
+//             System.out.println("The Two Arrays Are Not Disjoint.");
+//         }
+
+//         sc.close();
+//     }
+// }
+
+
+// Determine The Array Is A Subset Of Another Array.
+// import java.util.*;
+// public class top {
+
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.print("Enter The Size Of Array_1: ");
+//         int size1 = sc.nextInt();
+//         int arr1[] = new int[size1];
+
+//         System.out.print("Enter The Size Of Array_2: ");
+//         int size2 = sc.nextInt();
+//         int arr2[] = new int[size2];
+
+//         System.out.println("Enter The Elements Of Array_1: ");
+//         for(int i = 0;i<size1;i++){
+//             arr1[i] = sc.nextInt();
+//         }
+
+//         System.out.println("Enter The Elements Of Array_2: ");
+//         for(int j = 0;j<size2;j++){
+//             arr2[j] = sc.nextInt();
+//         }
+//         boolean isSubset = true;
+//         for (int i = 0; i < size2; i++) {
+//             boolean found = false; // Flag to check if arr2[i] exists in arr1
+
+//             // Inner loop iterates through elements of arr1
+//             for (int j = 0; j < size1; j++) {
+//                 if (arr2[i] == arr1[j]) {
+//                     found = true; // Element arr2[i] found in arr1
+//                     break;
+//                 }
+//             }
+
+//             // If arr2[i] is not found in arr1, set isSubset to false
+//             if (!found) {
+//                 isSubset = false;
+//                 break; // No need to check further, as arr2 is not a subset
+//             }
+//         }
+//         if (isSubset) {
+//             System.out.print("arr2[] Is Subset Of arr1[]");
+//         } else {
+//             System.out.print("arr2[] Is Not Subset Of arr1[]");
+//         }
+//     }
+// }
+
+
+// Determine Can All Numbers Of An Array Be Made Equal.
+// import java.util.*;
+// public class top {
+
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.print("Enter The Size Of Array: ");
+//         int size = sc.nextInt();
+//         int arr[] = new int[size];
+
+
+//         System.out.println("Enter The Elements Of Array: ");
+//         for(int i = 0;i<size;i++){
+//             arr[i] = sc.nextInt();
+//         }
+
+//         boolean makeEqual = true;
+//         for(int i = 0;i<size;i++){
+//             while(arr[i] % 2 == 0){
+//                 arr[i] /= 2;
+//             }
+//             while(arr[i] % 3 == 0){
+//                 arr[i] /= 3;
+//             }
+//         }
+
+
+//         for(int i = 1;i<size;i++){
+//             if(arr[i] != arr[0]){
+//                 makeEqual = false;
+//                 break;
+//             }
+//         }
+
+//         if (makeEqual) {
+//             System.out.print("Yes.");
+//         } else {
+//             System.out.print("No.");
+//         }
+//         sc.close();
+//     }
+// }
+
+
+// Find Sum Of Minimum Absolute Difference Of The Given Array.
+// import java.util.*;
+// public class top {
+
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.println("Enter Size Of The Array: ");
+//         int size = sc.nextInt();
+//         int arr[] = new int[size];
+//         System.out.print("Enter The Elements In The Array: ");
+//         for(int i = 0;i<size;i++){
+//             arr[i] = sc.nextInt();
+//         }
+//         int result = Integer.MAX_VALUE;
+//         for(int i = 0;i<size;i++){
+//             int sum = 0;
+//             for(int j = 0;j<size;j++){
+//                 sum += Math.abs(arr[i] - arr[j]);
+//             }
+//             result = Math.min(sum, result);
+//         }
+//         System.out.println("Required Minimum Sum Is: " + result);
+//     }
+// }
+
+
+// Sort An Array According To The Order Defined By Another Array.
+// import java.util.Scanner;
+
+// public class top {
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+
+//         System.out.print("Enter size of first array: ");
+//         int n = sc.nextInt();
+//         int arr1[] = new int[n];
+
+//         System.out.println("Enter elements of first array: ");
+//         for (int i = 0; i < n; i++) {
+//             arr1[i] = sc.nextInt();
+//         }
+
+//         System.out.print("Enter size of second array: ");
+//         int m = sc.nextInt();
+//         int arr2[] = new int[m];
+
+//         System.out.println("Enter elements of second array: ");
+//         for (int i = 0; i < m; i++) {
+//             arr2[i] = sc.nextInt();
+//         }
+
+//         // Sort arr1 according to arr2
+//         int sortedArr[] = new int[n];
+//         int index = 0;
+
+//         // Traverse arr2 and place matching elements from arr1 into sortedArr
+//         for (int i = 0; i < m; i++) {
+//             for (int j = 0; j < n; j++) {
+//                 if (arr1[j] == arr2[i]) {
+//                     sortedArr[index++] = arr1[j];
+//                     arr1[j] = -1; // Mark as used
+//                 }
+//             }
+//         }
+
+//         // Store remaining elements in temp array
+//         int temp[] = new int[n - index];
+//         int tempIndex = 0;
+//         for (int i = 0; i < n; i++) {
+//             if (arr1[i] != -1) {
+//                 temp[tempIndex++] = arr1[i];
+//             }
+//         }
+
+//         // Sort remaining elements in ascending order
+//         for (int i = 0; i < tempIndex - 1; i++) {
+//             for (int j = i + 1; j < tempIndex; j++) {
+//                 if (temp[i] > temp[j]) {
+//                     int t = temp[i];
+//                     temp[i] = temp[j];
+//                     temp[j] = t;
+//                 }
+//             }
+//         }
+
+//         // Add sorted remaining elements to sortedArr
+//         for (int i = 0; i < tempIndex; i++) {
+//             sortedArr[index++] = temp[i];
+//         }
+
+//         // Print sorted array
+//         System.out.println("Sorted array:");
+//         for (int i = 0; i < n; i++) {
+//             System.out.print(sortedArr[i] + " ");
+//         }
+
+//         sc.close();
+//     }
+// }
+
+
+// Replace Each Element Of The Array By Its Rank In The Array.
+// import java.util.*;
+// public class top {
+
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.print("Enter The Size Of The Array: ");
+//         int size = sc.nextInt();
+//         int arr[] = new int[size];
+//         int sortedarr[] = new int[size];
+//         System.out.print("Enter The Elements In The Array: ");
+//         for(int i = 0;i<size;i++){
+//             arr[i] = sc.nextInt();
+//             sortedarr[i] = arr[i];
+//         }
+
+//         Arrays.sort(sortedarr);
+
+// // Replacing Elements With Their Ranks.
+//         for(int i = 0;i<size;i++){
+//             for(int j = 0;j<size;j++){
+//                 if(arr[i] == sortedarr[j]){
+//                     arr[i] = j + 1;
+//                     break;
+//                 }
+//             }
+//         }
+//         System.out.print("Modified Array: " + Arrays.toString(arr));
+//         sc.close();
+//     }
+// }
+
+
+// Finding The Equilibrium Index Of An Array.
+// import java.util.*;
+// public class top {
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.print("Enter The Size Of The Array: ");
+//         int size = sc.nextInt();
+//         int arr[] = new int[size];
+
+//         System.out.print("Enter The Elements In The Array: ");
+//         for (int i = 0; i < size; i++) {
+//             arr[i] = sc.nextInt();
+//         }
+
+//         int totalSum = 0, leftSum = 0;
+//         for (int num : arr) {
+//             totalSum += num;
+//         }
+
+//         for (int i = 0; i < size; i++) {
+//             totalSum -= arr[i]; // This now becomes the right sum
+
+//             if (leftSum == totalSum) {
+//                 System.out.println("Equilibrium Index: " + i);
+//                 sc.close();
+//                 return;
+//             }
+
+//             leftSum += arr[i]; // Update left sum for next iteration
+//         }
+
+//         // If no equilibrium index is found
+//         System.out.println("No Equilibrium Index Found");
+//         sc.close();
+//     }
+// }
+
+
+// Rotation Of Elements Of An Array Left And Right.
+// import java.util.*;
+// public class top {
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+        
+//         // Input array size
+//         System.out.print("Enter The Size Of The Array: ");
+//         int size = sc.nextInt();
+//         int arr[] = new int[size];
+
+//         // Input array elements
+//         System.out.print("Enter The Elements In The Array: ");
+//         for (int i = 0; i < size; i++) {
+//             arr[i] = sc.nextInt();
+//         }
+
+//         // Input number of rotations
+//         System.out.print("Enter The Number Of Rotations: ");
+//         int k = sc.nextInt();
+//         k = k % size; // To handle cases where k > size
+
+//         System.out.print("Enter Direction (L for Left, R for Right): ");
+//         char direction = sc.next().charAt(0);
+
+//         int temp[] = new int[size];
+
+//         if (direction == 'L' || direction == 'l') {
+//             // Left Rotation
+//             for (int i = 0; i < k; i++) {
+//                 temp[i] = arr[i];
+//             }
+//             int x = k;
+//             for (int i = 0; i < size - k; i++) {
+//                 arr[i] = arr[x++];
+//             }
+//             x = 0;
+//             for (int i = size - k; i < size; i++) {
+//                 arr[i] = temp[x++];
+//             }
+//         } else if (direction == 'R' || direction == 'r') {
+//             // Right Rotation
+//             for (int i = 0; i < k; i++) {
+//                 temp[i] = arr[size - k + i]; // Store last k elements
+//             }
+//             int x = size - 1 - k;
+//             for (int i = size - 1; i >= k; i--) {
+//                 arr[i] = arr[x--];
+//             }
+//             x = 0;
+//             for (int i = 0; i < k; i++) {
+//                 arr[i] = temp[x++];
+//             }
+//         } else {
+//             System.out.println("Invalid direction! Use 'L' for Left or 'R' for Right.");
+//             sc.close();
+//             return;
+//         }
+
+//         // Print the rotated array
+//         for (int i = 0; i < size; i++) {
+//             System.out.print(arr[i] + " ");
+//         }
+
+//         sc.close();
+//     }
+// }
+
+
+// Block Swap Algorithm For Array Rotation.
+// import java.util.*;
+// public class top {
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.print("Enter the size of the array: ");
+//         int size = sc.nextInt();
+//         int arr[] = new int[size];
+//         System.out.print("Enter the elements of the array: ");
+//         for (int i = 0; i < size; i++) {
+//             arr[i] = sc.nextInt();
+//         }
+
+//         System.out.print("Enter the number of rotations: ");
+//         int d = sc.nextInt();
+//         d = d % size; // Handle cases where d > n
+
+//         int i = 0;
+//         int temp;
+        
+//         while (d != 0 && d != size) {
+//             if (size - d == d) { 
+//                 // Swap equal blocks
+//                 for (int j = 0; j < d; j++) {
+//                     temp = arr[i + j];
+//                     arr[i + j] = arr[size - d + i + j];
+//                     arr[size - d + i + j] = temp;
+//                 }
+//                 break;
+//             } else if (d < size - d) {
+//                 // Swap left small block with right part
+//                 for (int j = 0; j < d; j++) {
+//                     temp = arr[i + j];
+//                     arr[i + j] = arr[size - d + i + j];
+//                     arr[size - d + i + j] = temp;
+//                 }
+//                 size -= d;
+//             } else {
+//                 // Swap right small block with left part
+//                 for (int j = 0; j < size - d; j++) {
+//                     temp = arr[i + j];
+//                     arr[i + j] = arr[d + i + j];
+//                     arr[d + i + j] = temp;
+//                 }
+//                 i = size - d + i;
+//                 d = 2 * d - size;
+//             }
+//         }
+
+//         // Output the rotated array
+//         System.out.print("Rotated Array: ");
+//         for (int num : arr) {
+//             System.out.print(num + " ");
+//         }
+
+//         sc.close();
+//     }
+// }
+
+
+// Juggling Algorithm For Array Rotation.
+// import java.util.Scanner;
+
+// public class top {
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+
+//         // Input array size
+//         System.out.print("Enter the size of the array: ");
+//         int size = sc.nextInt();
+//         int arr[] = new int[size];
+
+//         // Input array elements
+//         System.out.print("Enter the elements of the array: ");
+//         for (int i = 0; i < size; i++) {
+//             arr[i] = sc.nextInt();
+//         }
+
+//         // Input number of rotations
+//         System.out.print("Enter the number of rotations: ");
+//         int d = sc.nextInt();
+//         d = d % size; // To handle cases where d > n
+
+//         int hcf = size, temp;
+//         int a = d, b = size;
+
+//         // Calculate HCF (GCD) using Euclidean Algorithm
+//         while (b != 0) {
+//             int tempHCF = b;
+//             b = a % b;
+//             a = tempHCF;
+//         }
+//         hcf = a;
+
+//         // Juggling Algorithm
+//         for (int i = 0; i < hcf; i++) {
+//             temp = arr[i];
+//             int j = i;
+
+//             while (true) {
+//                 int k = j + d;
+//                 if (k >= size) k = k - size; // Circular shift
+//                 if (k == i) break; // Stop when back to the original position
+//                 arr[j] = arr[k];
+//                 j = k;
+//             }
+//             arr[j] = temp;
+//         }
+
+//         // Print rotated array
+//         System.out.print("Array after rotation: ");
+//         for (int i = 0; i < size; i++) {
+//             System.out.print(arr[i] + " ");
+//         }
+
+//         sc.close();
+//     }
+// }
+
+
+// Finding The Circular Rotations Of Array By K Positions.
+// import java.util.Scanner;
+
+// public class top {
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+
+//         // Input array size
+//         System.out.print("Enter the size of the array: ");
+//         int size = sc.nextInt();
+//         int arr[] = new int[size];
+
+//         // Input array elements
+//         System.out.print("Enter the elements of the array: ");
+//         for (int i = 0; i < size; i++) {
+//             arr[i] = sc.nextInt();
+//         }
+
+//         // Input number of rotations
+//         System.out.print("Enter the number of rotations: ");
+//         int k = sc.nextInt();
+//         k = k % size; // Handle cases where k > n
+
+//         // Left rotate by k positions
+//         for (int j = 0; j < k; j++) {
+//             int temp = arr[0];
+//             for (int i = 0; i < size - 1; i++) {
+//                 arr[i] = arr[i + 1];
+//             }
+//             arr[size - 1] = temp;
+//         }
+
+//         // Print rotated array
+//         System.out.print("Array after rotation: ");
+//         for (int i = 0; i < size; i++) {
+//             System.out.print(arr[i] + " ");
+//         }
+//         sc.close();
+//     }
+// }
+
+
+// Check The Balance Of Parenthesis In An Expression.
+// import java.util.Scanner;
+// import java.util.Stack;
+
+// public class top {
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.print("Enter the expression: ");
+//         String str = sc.nextLine();
+        
+//         Stack<Character> stack = new Stack<>();
+//         boolean isBalanced = true;
+
+//         for (int i = 0; i < str.length(); i++) {
+//             char x = str.charAt(i);
+
+//             // If opening bracket, push to stack
+//             if (x == '(' || x == '[' || x == '{') {
+//                 stack.push(x);
+//             } 
+//             // If closing bracket, check stack
+//             else if (x == ')' || x == ']' || x == '}') {
+//                 if (stack.isEmpty()) {
+//                     isBalanced = false;
+//                     break;
+//                 }
+//                 char check = stack.pop();
+
+//                 // Check matching pairs
+//                 if ((x == ')' && check != '(') || 
+//                     (x == '}' && check != '{') || 
+//                     (x == ']' && check != '[')) {
+//                     isBalanced = false;
+//                     break;
+//                 }
+//             }
+//         }
+
+//         // If stack is not empty, parentheses are unbalanced
+//         if (!stack.isEmpty()) {
+//             isBalanced = false;
+//         }
+
+//         // Output result
+//         if (isBalanced)
+//             System.out.println("True");
+//         else
+//             System.out.println("False");
+
+//         sc.close();
+//     }
+// }
