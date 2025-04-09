@@ -56,19 +56,16 @@
 // }
 
 
-// Sum Of N Natural Numbers. 
+// Sum Of N Natural Numbers.
 // import java.util.*;
 // public class top {
 
 //     public static void main(String[] args) {
 //         Scanner sc = new Scanner(System.in);
-//         int sum = 0;
-//         System.out.print("Enter A Range Of Numbers: ");
-//         int num = sc.nextInt();
-//         for(int i = 0;i<=num;i++){
-//             sum = sum + i;
-//         }
-//         System.out.print(sum + " Is The Sum Of Given Range Of Natural Numbers.");
+//         System.out.print("Enter The Value Of N: ");
+//         int N = sc.nextInt();
+//         int sum_of_N_natural_numbers = N * (N + 1) / 2;
+//         System.out.print("The Sum Of N Natural Numbers Is: " + sum_of_N_natural_numbers);
 //     }
 // }
 
@@ -90,6 +87,7 @@
 //         System.out.print(sum);
 //     }
 // }
+
 
 
 // Greatest Of Two Numbers. 
