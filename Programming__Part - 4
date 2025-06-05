@@ -1,1 +1,769 @@
+// Working With Numbers.
+
+// Find GCD Or HCF Of Two Numbers.
+// import java.util.*;
+// public class top {
+
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.print("Enter The Value Of num1: ");
+//         int num1 = sc.nextInt();
+//         System.out.print("Enter The Value Of num2: ");
+//         int num2 = sc.nextInt();
+//         while(num1 != num2){
+//             if(num1 > num2){
+//                 num1 = num1 - num2;
+//             }
+//             else{
+//                 num2 = num2 - num1;
+//             }
+//         }
+//         System.out.print("The HCF Of Given Numbers Is: " + num1);
+//     }
+// }
+
+
+// Find LCM Of Two Numbers.
+// import java.util.*;
+// public class top {
+
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.print("Enter The Value Of num1: ");
+//         int num1 = sc.nextInt();
+//         System.out.print("Enter The Value Of num2: ");
+//         int num2 = sc.nextInt();
+//         int a = num1;
+//         int b = num2;
+//         while(num1 != num2){
+//             if(num1 > num2){
+//                 num1 = num1 - num2;
+//             }
+//             else{
+//                 num2 = num2 - num1;
+//             }
+//         }
+//         int hcf = num1;
+//         int lcm = (a * b) / hcf;
+//         System.out.print("The LCM Of Two Numbers Is: " + lcm);
+        
+//     }
+// }
+
+
+// GCD OF Two Numbers Is Same As HCF Of Two Numbers.
+
+
+// Binary To Decimal Conversion.
+// import java.util.*;
+// public class top {
+
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.print("Enter A Binary Number: ");
+//         int binary = sc.nextInt();
+//         int decimal = 0;
+//         int n = 0;
+
+//         while(binary > 0){
+//             int temp = binary % 10;
+//             decimal += temp*Math.pow(2,n);
+//             binary = binary / 10;
+//             n++;
+//         }
+//         System.out.print("Decimal Number Of Given Binary Number Is: " + decimal);
+//     }
+// }
+
+
+// Octal To Decimal Number Conversion.
+// import java.util.*;
+// public class top {
+
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.print("Enter A Octal Number: ");
+//         int octal = sc.nextInt();
+//         int decimal = 0;
+//         int n = 0;
+
+//         while(octal > 0){
+//             int temp = octal % 10;
+//             decimal += temp*Math.pow(8,n);
+//             octal = octal / 10;
+//             n++;
+//         }
+//         System.out.print("Decimal Number Of Given Octal Number Is: " + decimal);
+//     }
+// }
+
+
+// Hexadecimal To Decimal Conversion.
+// import java.util.*;
+// public class top {
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.print("Enter The Hexadecimal Value: ");
+//         String hex = sc.nextLine();
+//         String digits = "0123456789ABCDEF";
+//         hex = hex.toUpperCase();
+//         int val = 0;
+//         for(int i = 0;i<hex.length();i++){
+//             char c = hex.charAt(i);
+//             int d = digits.indexOf(c);
+//             val = 16 * val + d;
+//         }
+//         System.out.println("The Decimal Conversion Of Hexadecimal Is: " + val);
+//         sc.close();
+//     }
+// }
+
+// OR.
+
+// import java.util.*;
+// public class top {
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.print("Enter The Hexadecimal Value: ");
+//         String hex = sc.nextLine();
+//         int decimalVal = Integer.parseInt(hex,16);
+//         System.out.println("The Decimal Conversion Of Hexadecimal Is: " + decimalVal);
+//     } 
+// }
+
+
+// Decimal To Binary Conversion.
+// import java.util.*;
+// public class top {
+
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.print("Enter The Decimal Number: ");
+//         int dec = sc.nextInt();
+//         int bin[] = new int[20];
+//         int i = 0;
+//         while(dec > 0){
+//             int r = dec % 2;
+//             bin[i++] = r;
+//             dec = dec / 2;
+//         }
+//         System.out.println("The Binary Value: ");
+//         for(int j = i - 1; j>=0; j--){
+//             System.out.print(bin[j] + " ");
+//         }
+//     }
+// }
+
+
+// Decimal To Octal Conversion.
+// import java.util.*;
+// public class top {
+
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.print("Enter The Decimal Number: ");
+//         int dec = sc.nextInt();
+//         int oct[] = new int[20];
+//         int i = 0;
+//         while(dec > 0){
+//             int r = dec % 8;
+//             oct[i++] = r;
+//             dec = dec / 8;
+//         }
+//         System.out.println("The Binary Value: ");
+//         for(int j = i - 1; j>=0; j--){
+//             System.out.print(oct[j] + " ");
+//         }
+//     }
+// }
+
+
+// Decimal To Hexadecimal Conversion.
+// import java.util.*;
+// public class top {
+
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.print("Enter The Decimal Value: ");
+//         int dec = sc.nextInt();
+//         int l, b = 0;
+//         char a;
+//         String str = "";
+//         String s = "0123456789ABCDEF";
+//         while(dec!=0){
+//             b = dec % 16;
+//             a = s.charAt(b);
+//             str = a + str;
+//             dec = dec / 16;
+//         }
+//         System.out.print("The Hexadecimal Value Is: " + str);
+//     }
+// }
+
+
+// Binary To Octal Conversion.
+// import java.util.*;
+// public class top {
+
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.print("Enter The Binary Value: ");
+//         int binary = sc.nextInt();
+//         int decimal = 0;
+//         int n = 0;
+//         while(binary>0){
+//             int temp = binary % 10;
+//             decimal  += temp * Math.pow(2,n);
+//             binary = binary / 10;
+//             n++;
+//         }
+//         System.out.println("Decimal Of The Above Binary Value Is: " + decimal);
+//         int octal[] = new int[20];
+//         int i = 0;
+//         while(decimal > 0){
+//             int r = decimal % 8;
+//             octal[i++] = r;
+//             decimal = decimal / 10;
+//         }
+//         System.out.print("Octal Number: ");
+//         for(int j = i - 1;j>=0;j--){
+//             System.out.print(octal[j]);
+//         }
+//         sc.close();
+//     }
+// }
+
+
+// Octal To Binary Conversion.
+// import java.util.*;
+// public class top {
+
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.print("Enter The Octal Value: ");
+//         int octal = sc.nextInt();
+//         int decimal = 0;
+//         int n = 0;
+//         while(octal > 0){
+//             int temp = octal % 10;
+//             decimal += temp * Math.pow(8,n);
+//             octal /= 10;
+//             n++;
+//         }
+//         System.out.println("Decimal Value Of Above Octal Value Is: " + decimal);
+//         int binary[] = new int[20];
+//         int i = 0;
+
+//         while(decimal > 0){
+//             int r = decimal % 2;
+//             binary[i++] = r;
+//             decimal = decimal / 2;
+//         }
+//         System.out.println("Binary Value: ");
+//         for(int j = i - 1;j>=0;j--){
+//             System.out.print(binary[j] + " ");
+//         }
+//     }
+// }
+
+
+//  find out the quadrant in which the given co-ordinate lie.
+// import java.util.*;
+// public class top {
+
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.println("Enter The Value Of x: ");
+//         int x = sc.nextInt();
+//         System.out.println("Enter The Value Of y: ");
+//         int y = sc.nextInt();
+//         if(x>0 && y>0){
+//             System.out.println("First Quadrant.");
+//         }
+//         else if(x<0 && y>0){
+//             System.out.println("Second Quadrant.");
+//         }
+//         else if(x<0 && y<0){
+//             System.out.println("Third Quadrant.");
+//         }
+//         else if(x>0 && y<0){
+//             System.out.println("Fourth Quadrant.");
+//         }
+//         else if(x==0 && y==0){
+//             System.out.println("Origin.");
+//         }
+//         else if(x!= 0 && y==0){
+//             System.out.println("X-Axis.");
+//         }
+//         else if(x==0 && y!=0){
+//             System.out.println("Y-Axis.");
+//         }
+//     }
+// }
+
+
+// Permutations in which n people can occupy r seats in a classroom.
+// import java.util.*;
+// public class top {
+
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.println("Enter The Value Of n: ");
+//         int n = sc.nextInt();
+//         System.out.println("Enter The Value Of r: ");
+//         int r = sc.nextInt();
+//         int fact1 = 1;
+//         int fact2 = 1;
+//         int per;
+//         for(int i = n;i>1;i = i - 1){
+//             fact1 = fact1 * i;
+//         }
+//         int number = n - r;
+//         for(int i = number;i>1;i = i - 1){
+//             fact2 = fact2 * i;
+//         }
+//         System.out.println("The Final Answer Is: " + fact1 / fact2);
+//     }
+// }
+
+
+// Maximum Number Of Handshakes.
+// import java.util.*;
+// public class top {
+
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.println("Enter The Value Of N: ");
+//         int N = sc.nextInt();
+//         System.out.println("The Maximum Of Number Of Handskakes Are: ");
+//         System.out.println((N * (N - 1)) / 2);
+//     }
+// }
+
+
+// Adding Two Fractions.
+// import java.util.*;
+// public class top {
+
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         int a,b,c,d,x,y,gcd = 0;
+//         System.out.println("Enter The Numerator For 1st Number: ");
+//         a = sc.nextInt();
+//         System.out.println("Enter The Denominator Of 1st Number: ");
+//         b = sc.nextInt();
+//         System.out.println("Enter The Numerator For 2nd Number: ");
+//         c = sc.nextInt();
+//         System.out.println("Enter The Denominator For 2nd Number: ");
+//         d = sc.nextInt();
+//         x = (a * d) + (b * c);
+//         y = b * d;
+//         for(int i = 1; i<=x && i<=y; ++i){
+//             if(x % i == 0 && y % i == 0){
+//                 gcd = i;
+//             }
+//         }
+//         System.out.println("The Added Fraction Is: " + x / gcd + "/" + y/gcd);
+//     }
+// }
+
+
+// Replace all 0’s with 1 in a given integer.
+// import java.util.*;
+// public class top {
+
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.println("Enter The Number: ");
+//         int number = sc.nextInt();
+//         String str = Integer.toString(number);
+//         int len = str.length();
+//         String str1 = "";
+//         for(int i=0;i<len;i++){
+//             if(str.charAt(i) == '0'){
+//                 str1 += '1';
+//             }
+//             else{
+//                 str1 += str.charAt(i);
+//             }
+//         }
+//         System.out.println("Converted Number Is: " + str1);
+//         sc.close();
+//     }
+// }
+
+// Or.
+
+// import java.util.*;
+// public class top {
+
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.println("Enter The Number: ");
+//         int number = sc.nextInt();
+//         String str = "" + number;
+//         System.out.println("Converted Number: " + Integer.parseInt(str.replace("0", "1")));
+//     }
+// }
+
+
+// Expressing A Number As A Sum Of Two Prime Numbers.
+// import java.util.*;
+// public class top {
+
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.print("Enter A Number: ");
+//         int number = sc.nextInt();
+//         int x = 0;
+//         for(int i = 2;i<=number/2;i++){
+//             if(prime_or_not(i) == 1){
+//                 if(prime_or_not(number - i) == 1){
+//                     System.out.println(number + " = " + i + " + " + (number - i));
+//                     x = 1;
+//                 }
+//             }
+//         }
+//         if(x == 0){
+//             System.out.println(number + "Cannot Be Expressed As Sum Of Two Prime Numbers.");
+//         }
+//     }
+
+//         public static int prime_or_not(int n){
+//             int c = 1;
+//             for(int i = 2;i<n;i++){
+//                 if(n % i == 0){
+//                     c = 0;
+//                     break;
+//                 }
+//             }
+//             return c;
+//     }
+// }
+
+
+// Count Possible Decoding Of A Given Digit Sequence.
+// import java.util.*;
+// public class top {
+
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.print("Enter The Number: ");
+//         int number = sc.nextInt();
+//         String str = String.valueOf(number);
+//         int n = str.length();
+
+//         if (n == 0 || str.charAt(0) == '0') {
+//             System.out.println("Number Of Possible Decodings: 0");
+//             return;
+//         }
+
+//         int prev = 1; // dp[i-2]
+//         int curr = 1; // dp[i-1]
+
+//         for (int i = 1; i < n; i++) {
+//             int temp = 0;
+
+//             // Check single digit
+//             if (str.charAt(i) != '0')
+//                 temp += curr;
+
+//             // Check two-digit number
+//             int twoDigit = Integer.parseInt(str.substring(i - 1, i + 1));
+//             if (twoDigit >= 10 && twoDigit <= 26)
+//                 temp += prev;
+
+//             prev = curr;
+//             curr = temp;
+//         }
+
+//         System.out.println("Number Of Possible Decodings: " + curr);
+//     }
+// }
+
+
+// Calculating Area Of Circle.
+// import java.util.*;
+// public class top {
+
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.print("Enter The Radius Of The Circle: ");
+//         double radius = sc.nextDouble();
+//         double area_of_circle =  3.14 * radius * radius;
+//         System.out.println("The Area Of The Circle Is: " + area_of_circle);
+//     }
+// }
+
+
+// Find The Prime Numbers Between Any Given Range.
+// import java.util.*;
+
+// public class top {
+
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.print("Enter The Starting Range: ");
+//         int strg = sc.nextInt();
+//         System.out.print("Enter The Ending Range: ");
+//         int enrg = sc.nextInt();
+
+//         System.out.println("Prime Numbers Between " + strg + " and " + enrg + " are:");
+
+//         for (int i = strg; i <= enrg; i++) {
+//             if (i < 2) continue; // Skip numbers less than 2
+//             boolean isPrime = true;
+
+//             for (int j = 2; j <= Math.sqrt(i); j++) {
+//                 if (i % j == 0) {
+//                     isPrime = false;
+//                     break;
+//                 }
+//             }
+
+//             if (isPrime) {
+//                 System.out.print(i + " ");
+//             }
+//         }
+//     }
+// }
+
+
+// Counting Number Of Digits In A Number.
+// import java.util.*;
+// public class top {
+
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.print("Enter The Number: ");
+//         int number = sc.nextInt();
+//         int count = 0;
+//         while(number > 0){
+//             int ld = number % 10;
+//             count++;
+//             number = number / 10;
+//         }
+//         System.out.println("The Total Number Of Digits In A Number: " + count);
+//     }
+// }
+
+
+// Converting Numbers To A Words.
+// import java.util.Scanner;
+// public class top {
+//     public static void main(String[] args) {
+
+//         Scanner sc = new Scanner(System.in);
+//         System.out.print("Enter a number (up to 4 digits): ");
+//         String input = sc.nextLine();
+//         char[] num = input.toCharArray();
+//         int len = num.length;
+
+//         // Base cases
+//         if (len == 0) {
+//             System.out.println("Empty input.");
+//             return;
+//         }
+//         if (len > 4) {
+//             System.out.println("Length more than 4 is not supported.");
+//             return;
+//         }
+
+//         String[] single_digits = {
+//             "zero", "one", "two", "three", "four",
+//             "five", "six", "seven", "eight", "nine"
+//         };
+
+//         String[] two_digits = {
+//             "", "ten", "eleven", "twelve", "thirteen",
+//             "fourteen", "fifteen", "sixteen", "seventeen",
+//             "eighteen", "nineteen"
+//         };
+
+//         String[] tens_multiple = {
+//             "", "", "twenty", "thirty", "forty", "fifty",
+//             "sixty", "seventy", "eighty", "ninety"
+//         };
+
+//         String[] tens_power = { "hundred", "thousand" };
+
+//         System.out.print(input + ": ");
+
+//         if (len == 1) {
+//             System.out.println(single_digits[num[0] - '0']);
+//             return;
+//         }
+
+//         int x = 0;
+//         while (x < num.length) {
+//             if (len >= 3) {
+//                 if (num[x] - '0' != 0) {
+//                     System.out.print(single_digits[num[x] - '0'] + " ");
+//                     System.out.print(tens_power[len - 3] + " ");
+//                 }
+//                 --len;
+//             } else {
+//                 if (num[x] - '0' == 1) {
+//                     int sum = (num[x] - '0') * 10 + (num[x + 1] - '0');
+//                     System.out.println(two_digits[sum % 10 + 1]);
+//                     return;
+//                 } else if (num[x] - '0' == 2 && num[x + 1] - '0' == 0) {
+//                     System.out.println("twenty");
+//                     return;
+//                 } else {
+//                     int i = num[x] - '0';
+//                     if (i > 0)
+//                         System.out.print(tens_multiple[i] + " ");
+//                     ++x;
+//                     if (num[x] - '0' != 0)
+//                         System.out.println(single_digits[num[x] - '0']);
+//                 }
+//             }
+//             ++x;
+//         }
+//     }
+// }
+
+
+// Counting number of days in a given month of a year.
+// import java.util.*;
+// public class top {
+
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.println("Enter The Month: ");
+//         int month = sc.nextInt();
+//         System.out.println("Enter The Year: ");
+//         int year = sc.nextInt();
+
+//         switch(month){
+//             case 1:
+//             case 3:
+//             case 5:
+//             case 7:
+//             case 8:
+//             case 10:
+//             case 12:
+//             System.out.println("Number Of Days Is 31.");
+//             break;
+
+//             case 4:
+//             case 6:
+//             case 9:
+//             case 11:
+//             System.out.println("Number Of Days Is 30.");
+//             break;
+
+//             case 2:
+//             if((year % 400 == 0) || ((year % 100 != 0) && (year%4 == 0))){
+//                 System.out.println("Number Of Days Is 29.");
+//             }
+//             else{
+//                 System.out.println("Number Of Days Is 28.");
+//             }
+//             break;
+
+//             default:
+//             System.out.println("Invalid Month, Re-Try.");
+//             break;
+//         }
+//     }
+// }
+
+
+// Occurrence Of A Digit In A Given Number.
+// import java.util.*;
+// public class top {
+
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.println("Enter The Number: ");
+//         int number = sc.nextInt();
+//         int count = 0;
+//         System.out.println("Enter The Digit: ");
+//         int digit = sc.nextInt();
+
+//         while(number>0){
+//             int rem = number % 10;
+//             if(rem == digit){
+//                 count++;
+//             }
+//             number /= 10;
+//         }
+
+//         System.out.println(digit + " Occured " + count + " Times In A Given Number.");
+//     }
+// }
+
+
+// Finding number of integers which has exactly X divisors.
+// import java.util.*;
+// public class top {
+
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.println("Enter The Value Of n: ");
+//         int n = sc.nextInt();
+//         System.out.println("Enter The Value Of x: ");
+//         int x = sc.nextInt();
+//         int count = 0;
+//         for(int i = 1;i<=n;i++){
+//             int count_factors = 0;
+//             for(int j = 1;j<=i;j++){
+//                 if(i % j == 0){
+//                     count_factors++;
+//                 }
+//             }
+//             if(count_factors == x){
+//                 count++;
+//             }
+//         }
+//         System.out.println(count);
+//     }
+// }
+
+
+// // Finding The Roots Of Quadratic Equation.
+// import java.util.*;
+// import static java.lang.Math.*;
+// public class top {
+
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.print("Enter The Value Of a: ");
+//         int a = sc.nextInt();
+//         System.out.print("Enter The Value Of b: ");
+//         int b = sc.nextInt();
+//         System.out.print("Enter The Value Of c: ");
+//         int c = sc.nextInt();
+// // Check if 'a' is zero, which makes it not a quadratic equation.
+//         if(a == 0){
+//             System.out.println("This Is Not A Quadratic Equation.");
+//             return;
+//         }
+// // Calculate The Discriminant (D = b*b - 4*a*c)
+//         int dis = b*b - 4*a*c;
+
+// // Check The Nature Of The Roots Based On The Discriminant.
+//         if(dis>0){
+//             double root1 = (-b + sqrt(dis)) / (2.0 * a);
+//             double root2 = (-b - sqrt(dis)) / (2.0 * a);
+//             System.out.println("Roots Are Real And Different.");
+//             System.out.println("Root 1 = " + root1);
+//             System.out.println("Root 2 = " + root2);
+//         }
+//         else if(dis == 0){
+//             double root = -b / (2.0 * a);
+//             System.out.println("Roots Are Real And Same.");
+//             System.out.println("Root = " + root);
+//         }
+//         else{
+//             double realPart = -b / (2.0 * a);
+//             double imaginaryPart = sqrt(-dis) / (2.0 * a);
+//             System.out.println("Roots Are Complex And Different.");
+//             System.out.println("Root 1 = " + realPart + " + i" + imaginaryPart);
+//             System.out.println("Root 2 = " + realPart + " - i" + imaginaryPart);
+//         }
+//     }
+// }
 
